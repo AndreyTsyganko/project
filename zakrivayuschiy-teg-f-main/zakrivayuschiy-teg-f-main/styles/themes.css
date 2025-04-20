@@ -1,0 +1,90 @@
+/* В этом файле вы опишете значения переменных в разных цветовых схемах.
+Придерживайтесь такого именования классов:
+✦ theme-dark — класс тёмной темы
+✦ theme-light — класс светлой темы
+✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
+*/
+
+:root.theme-light {
+    --text-color: #000000;
+    --bg-color: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #e7e7e7 .01%, #1a1a1a);
+    --header-bg-color: #FFFFFF;
+    --title-bg-color: #FFFFFF;
+    --title-text-color: #000000;
+    --border-color: #000000;
+    --button-color: #000000;
+    --lable-shadow: #FFFFFF;
+    --slide-color: #FFFFFF;
+    --like-counter: #000000;
+    --sparks-color: #FF0000;
+    --core-color: #000000;
+    --like-color: #000000;
+    --core-colore-active: #FF0000;
+    --disket-color: #000000;
+    --font-weight-title: 700;
+    --font-weight-body: 400;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-color: #000000;
+        --bg-color: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #e7e7e7 .01%, #1a1a1a);
+        --header-bg-color: #FFFFFF;
+        --title-bg-color: #FFFFFF;
+        --title-text-color: #000000;
+        --border-color: #000000;
+        --button-color: #000000;
+        --lable-shadow: #FFFFFF;
+        --slide-color: #FFFFFF;
+        --like-counter: #000000;
+        --sparks-color: #FF0000;
+        --core-color: #000000;
+        --like-color: #000000;
+        --core-colore-active: #FF0000;
+        --disket-color: #000000;
+        --font-weight-title: 700;
+        --font-weight-body: 400;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #00CC14;
+        --bg-color: repeating-linear-gradient(to right, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #007f0c .01%, #004306);
+        --header-bg-color: #000000;
+        --title-bg-color: #000000;
+        --title-text-color: #00CC14;
+        --button-color: #00CC14;
+        --border-color: #00CC14;
+        --lable-shadow: #000000;
+        --slide-color: #00CC14;
+        --like-counter: #00CC14;
+        --sparks-color: #FF0000;
+        --core-color: #00CC14;
+        --like-color: #00CC14;
+        --core-colore-active: #00CC14;
+        --disket-color: #00CC14;
+        --font-weight-title: 785;
+        --font-weight-body: 465;
+    }
+}
+
+:root.theme-dark {
+    --text-color: #00CC14;
+    --bg-color: repeating-linear-gradient(to right, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #007f0c .01%, #004306);
+    --header-bg-color: #030303;
+    --title-bg-color: #000000;
+    --title-text-color: #00CC14;
+    --button-color: #00CC14;
+    --border-color: #00CC14;
+    --lable-shadow: #000000;
+    --slide-color: #00CC14;
+    --like-counter: #00CC14;
+    --sparks-color: #FF0000;
+    --core-color: #00CC14;
+    --like-color: #00CC14;
+    --core-colore-active: #00CC14;
+    --disket-color: #00CC14;
+    --font-weight-title: 785;
+    --font-weight-body: 465;
+}
