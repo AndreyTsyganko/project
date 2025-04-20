@@ -1,0 +1,62 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_dark {
+  --text-color: #000028;
+  --accent-color: #FF0070;
+  --color-title: #FF0070;
+  --background-color: #000028;
+  --color-button: #FF0070;
+  --color-border: rgba(255, 0, 112, .5);
+  --color-text-focus: #DB00FF;
+  --color-text-main: #F1B2CE;
+  --focus-color: #FF0070;
+  --corner-color: #FF0070;
+  --text-shadow: #FF0070;
+  --color-rec: #FF0070;
+  --font-family: 'IBM Plex mono', 'monospace';
+  --imgroot: url('../images/cover-image-dark.png');
+  
+}
+
+
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+
+:root {
+  --background-color: #000028;
+  --color-button: #FF0070;
+  --text-color: #000028;
+  --accent-color: #FF0070;
+  --color-title: #FF0070;
+  --color-border: rgba(255, 0, 112, .5);
+  --color-text-main: #F1B2CE;
+  --color-text-focus: #DB00FF;
+  --corner-color: #FF0070;
+  --focus-color: #FF0070;
+  --text-shadow: #FF0070;
+  --color-rec: #FF0070;
+  --imgroot: url('../images/cover-image-dark.png');
+  --font-family: 'IBM Plex mono', 'monospace';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
