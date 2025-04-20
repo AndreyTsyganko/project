@@ -1,0 +1,30 @@
+.card__delete-button {
+  width: 18px;
+  height: 18px;
+  background: transparent url('../../../images/delete-icon.svg') center no-repeat;
+  background-size: 18px 18px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  padding: 0;
+  margin: 0;
+  transition: opacity 0.3s; /* Убираем visibility из переходов */
+  opacity: 1; /* Устанавливаем opacity в 1 по умолчанию */
+}
+
+.card__delete-button_is-owner {
+  display: block;
+  /* Можно оставить пустым, если не нужно изменять стиль для владельца */
+}
+
+/* Убираем hover эффект, если не нужен */
+.card__delete-button:hover {
+  /* Можно оставить, если хотите, чтобы кнопка немного изменялась при наведении */
+  opacity: 0.6; /* Пример эффекта при наведении */
+}
+
+
+
+

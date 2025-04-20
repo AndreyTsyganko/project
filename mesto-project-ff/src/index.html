@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mesto</title>
+  <h1 id="userName"></h1>
+  <p id="userDescription"></p>
+</head>
+<body class="page">
+<div class="page__content">
+  <header class="header page__section">
+    <img src="<%=require('../src/images/logo.svg')%>" alt="Логотип проекта масто" class="logo header__logo">
+  </header>
+  <main class="content">
+    
+    <section class="profile page__section">
+      <div class="profile__avatar-container">
+          <img class="profile__image" src="" id="userAvatar" alt="Аватар" style="cursor: pointer; width: 100px; height: 100px; border-radius: 50%;">
+          <div class="profile__edit-icon">
+              <img class="edit__icon" src="<%=require('/src/images/edit-icon.svg')%>" alt="Редактировать" />
+          </div>
+      </div>
+      <div class="profile__info">
+          <h1 class="profile__title" id="userName">Имя пользователя</h1> 
+          <button class="profile__edit-button" type="button"></button>
+          <p class="profile__description" id="userDescription">Описание пользователя</p>
+      </div>
+      <button class="profile__add-button" type="button"></button>
+  </section>
+
+    <div class="popup popup_type_change-avatar" id="changeAvatarPopup">
+      <div class="popup__content">
+          <button class="popup__close" id="closeChangeAvatarPopup">&times;</button>
+          <h2 class="popup__title">Обновить аватар</h2>
+          <form class="popup__form" id="changeAvatarForm">
+              <input type="url" id="avatarLink" name="avatarLink" class="popup__input" required>
+              <span class="popup__error"></span>
+              <button type="submit" class="popup__button">Сохранить</button>
+          </form>
+      </div>
+    </div>
+
+    <section class="places page__section">
+      <ul class="places__list">
+      </ul>
+    </section>
+  </main>
+  <footer class="footer page__section">
+    <p class="footer__copyright">
+      © 2021 Mesto Russia
+    </p>
+  </footer>
+
+  <div class="popup popup_type_edit">
+    <div class="popup__content">
+      <button type="button" class="popup__close"></button>
+      <h3 class="popup__title">Редактировать профиль</h3>
+      <form class="popup__form" name="edit-profile">
+        <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя" required>
+        <span class="popup__error"></span>
+        <input type="text" name="description" class="popup__input popup__input_type_description" placeholder="Занятие" required>
+        <span class="popup__error"></span>
+        <button type="submit" class="button popup__button">Сохранить</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup popup_type_new-card">
+    <div class="popup__content">
+      <button type="button" class="popup__close"></button>
+      <h3 class="popup__title">Новое место</h3>
+      <form id="addCardForm" class="popup__form" name="new-place">
+        <input type="text" name="place-name" class="popup__input popup__input_type_card-name" placeholder="Название" required>
+        <span class="popup__error"></span>
+        <input type="url" name="link" class="popup__input popup__input_type_url" placeholder="Ссылка на картинку" required>
+        <span class="popup__error"></span>
+        <button type="submit" class="button popup__button">Сохранить</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup popup_type_image">
+    <div class="popup__content popup__content_content_image">
+      <button type="button" class="popup__close"></button>
+      <img src="" alt="" class="popup__image">
+      <p class="popup__caption"></p>
+    </div>
+  </div>
+
+  <form id="cardForm">
+    <label for="cardName">Название карточки:</label>
+    <input type="text" id="cardName" required>
+    
+    <label for="cardLink">Ссылка на изображение:</label>
+    <input type="url" id="cardLink" required>
+    
+    <button type="submit">Добавить карточку</button>
+  </form>
+  <div id="confirmationPopup" class="popup">
+    <div class="popup__content">
+        <p>Вы уверены, что хотите удалить эту карточку?</p>
+        <button class="confirm-delete-button">Да</button>
+        <button class="cancel-delete-button" onclick="closeDeleteConfirmationPopup()">Нет</button>
+    </div>
+</div>
+  
+<template id="card-template">
+  <li class="places__item card">
+      <img class="card__image" src="" alt="" />
+      <button type="button" class="card__delete-button" aria-label="Удалить карточку"></button>
+      <div class="card__description" data-card-id="">
+          <h2 class="card__title"></h2>
+          <button type="button" class="card__like-button" aria-label="Лайк" data-liked="false">
+              <span class="card__likes-count"></span>
+          </button>
+      </div>
+  </li>
+</template>
+</div>
+</body>
+</html>
+

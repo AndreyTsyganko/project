@@ -1,0 +1,11 @@
+.card__like-button_is-active {
+  background: transparent url('../../../../images/like-active.svg') no-repeat;
+  
+}
+
+.card__likes-count {
+  font-size: 13px; /* Размер шрифта */
+  color: black; /* Цвет текста */
+  margin: 20px 0; /* Отступы */
+}
+
